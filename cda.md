@@ -125,7 +125,10 @@ mode_func <- function(x) {
   ux[which.max(tabulate(match(x, ux)))]
 }
 
+mode <- function (){return(names(sort(-table(marks)))[1])}
+
 mode_func(marks)
+mode(marks)
 
 # From CSV
 # data <- read.csv("data.csv")
